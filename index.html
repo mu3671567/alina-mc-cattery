@@ -6,19 +6,23 @@
     <title>Alina MC Cattery - Premium Maine Coon Cats</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2>🐱 Alina MC Cattery</h2>
+                <h2>Alina MC Cattery</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cats">Our Cats</a></li>
-                <li><a href="#adoption">Adoption</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#cats">Our Maine Coons</a></li>
+                <li><a href="#kittens">Our Kittens</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-links">
@@ -36,9 +40,6 @@
             <p>Discover the majesty and gentle nature of our champion bloodline Maine Coons</p>
             <button class="cta-button" onclick="scrollToSection('cats')">Meet Our Cats</button>
         </div>
-        <div class="hero-image">
-            <div class="cat-placeholder">🦁 Beautiful Maine Coon Image</div>
-        </div>
     </section>
 
     <!-- About Section -->
@@ -48,21 +49,38 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>Welcome to Alina MC Cattery, where we specialize in breeding exceptional Maine Coon cats with champion bloodlines. Our cats are raised with love, care, and the highest standards of health and temperament.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-shield-alt"></i>
-                            <h3>Health Guaranteed</h3>
-                            <p>All our cats come with health certificates and genetic testing</p>
+                    
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Stress-free Environment</h3>
+                            <p>Our Maine Coons live with us in the house with no cages, enjoying freedom and safety in our specially designed home.</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <h3>Raised with Love</h3>
-                            <p>Family-raised in a loving home environment</p>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Premium Nutrition</h3>
+                            <p>Carefully selected and balanced raw meat diet prepared with the highest quality ingredients from trusted sources.</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-trophy"></i>
-                            <h3>Champion Bloodlines</h3>
-                            <p>Premium genetics from award-winning lines</p>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Health First</h3>
+                            <p>Regular veterinary check-ups, genetic testing, heart checks, and vaccinations ensure optimal health.</p>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h3>Selective Breeding</h3>
+                            <p>Only physically healthy and genetically pure producers. Strict monitoring of all breeding processes.</p>
                         </div>
                     </div>
                 </div>
@@ -86,30 +104,39 @@
         </div>
     </section>
 
-    <!-- Adoption Process -->
-    <section id="adoption" class="adoption-section">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2>Adoption Process</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Application</h3>
-                    <p>Fill out our adoption application form</p>
+            <div class="cta-content">
+                <h2>Ready to Welcome a Maine Coon?</h2>
+                <p>Join our waiting list and be the first to know about new litters and available kittens.</p>
+                <button class="cta-button-secondary" onclick="scrollToSection('contact')">Join Waiting List</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🐱 Our Kittens</div>
+                    </div>
+                    <h3>Our Kittens</h3>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Approval</h3>
-                    <p>We review and approve suitable homes</p>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">📷 Blog</div>
+                    </div>
+                    <h3>Blog</h3>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Reservation</h3>
-                    <p>Secure your kitten with a deposit</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Bring Home</h3>
-                    <p>Take your new family member home</p>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🏆 Our Maine Coons</div>
+                    </div>
+                    <h3>Our Maine Coons</h3>
                 </div>
             </div>
         </div>
@@ -124,7 +151,7 @@
                     <h3>Get In Touch</h3>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <span>+44 7557 122692</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -132,7 +159,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Cat Lane, Feline City, FC 12345</span>
+                        <span>Yorkshire, United Kingdom</span>
                     </div>
                     <div class="social-links-large">
                         <h4>Follow Us</h4>
@@ -145,6 +172,9 @@
                             </a>
                             <a href="https://tiktok.com" target="_blank" class="social-icon tiktok">
                                 <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me" target="_blank" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
                     </div>
@@ -159,6 +189,7 @@
                         <option value="kitten">Maine Coon Kitten</option>
                         <option value="adult">Adult Maine Coon</option>
                         <option value="info">General Information</option>
+                        <option value="waiting">Waiting List</option>
                         <option value="other">Other</option>
                     </select>
                     <textarea placeholder="Your Message" rows="5" required></textarea>
@@ -174,16 +205,23 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Alina MC Cattery</h3>
-                    <p>Breeding exceptional Maine Coon cats with love and care since 2015.</p>
+                    <p>Breeding exceptional Maine Coon cats with love and care. Fully licensed and registered.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#cats">Our Cats</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#cats">Our Maine Coons</a></li>
+                        <li><a href="#kittens">Our Kittens</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +44 7557 122692</p>
+                    <p><i class="fas fa-envelope"></i> info@alinamccattery.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Yorkshire, UK</p>
                 </div>
                 <div class="footer-section">
                     <h3>Connect</h3>
@@ -191,11 +229,12 @@
                         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Alina MC Cattery. All rights reserved.</p>
+                <p>&copy; 2024 Alina MC Cattery. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
